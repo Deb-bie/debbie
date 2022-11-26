@@ -7,11 +7,11 @@ const Contact = () => {
     return (
         <div id="contact" className="w-[100%] h-[100%] pt-24 pb-12  overflow-hidden">
             <div className="w-[100%] h-[100%] mb-8 4xs:px-2 3xs:px-6 sm:px-24 gap-y-8 flex 4xs:flex-col sm:flex-row justify-between content-center items-center ">
-                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] flex">
+                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] flex flex-row justify-center">
                     <img src={ContactImage} alt="contact" className="object-contain " />
                 </div>
 
-                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] mb-32 flex flex-col justify-center content-center items-start ">
+                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] mb-32 flex flex-col justify-center content-center 4xs:items-center sm:items-start ">
                     <h1 className="text-4xl pb-12 ">Let's work together</h1>
 
                     <p className="w-[80%] text-base pb-12">
