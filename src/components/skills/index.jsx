@@ -20,7 +20,7 @@ const Skills = () => {
                             whileInView={{ rotate: 0 }}
                             viewport={{ margin: "-40px" }}
                             transition={{ duration: 3.5, type: "spring" }}
-                            className="relative w-[50vw] md:w-[25vw] sm:h-[40vw] md:h-[25vw] h-[50vw] rounded-[100%] shadow-2xl bg-white z-20  "
+                            className="relative w-[80vw] md:w-[25vw] h-[80vw] sm:h-[40vw] md:h-[25vw] rounded-[100%] shadow-2xl bg-white z-20  "
                         >
                             <div className="w-[30%] h-[30%]  rounded-[100%] border-[2px] border-[#ebebeb] flex items-center justify-center bg-none shadow-xl bg-white absolute -top-[20%] left-[33%] hover:transform hover:transition-500 hover:scale-90 cursor-pointer">
                                 <img src={Frontend} alt="" className=" transform scale-[0.8] " />

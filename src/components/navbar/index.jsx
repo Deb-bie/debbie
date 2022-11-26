@@ -41,7 +41,7 @@ const menuVariants = {
   
 const menuTransition = {
     type: "spring",
-    duration: 1,
+    duration: 2,
     stiffness: 33,
     delay: 0.1,
 };
@@ -205,39 +205,37 @@ const Navbar = () => {
                             <div className="w-full flex flex-col">
                                 <ul className="py-12 pl-[30px] w-full flex flex-col ">
 
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
+                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
                                         <LinkS
                                             to="about"
                                             smooth={true}
-                                            duration={500}
+                                            duration={200}
                                             spy={true}
                                             exact='true'
                                             offset={-80}
                                             activeClassName="active"
-                                            onClick={()=>handleMobile()}
                                         >
                                             About
                                         </LinkS>                            
                                     </motion.li>
 
 
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
+                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
                                         <LinkS
                                             to="skills"
                                             smooth={true}
-                                            duration={500}
+                                            duration={200}
                                             spy={true}
                                             exact='true'
                                             offset={-80}
                                             activeClassName="active"
-                                            onClick={()=>handleMobile()}
                                         >
                                             Skills
                                         </LinkS>                            
                                     </motion.li>
 
 
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
+                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
                                         <LinkS
                                             to="projects"
                                             smooth={true}
@@ -246,14 +244,13 @@ const Navbar = () => {
                                             exact='true'
                                             offset={-80}
                                             activeClassName="active"
-                                            onClick={()=>handleMobile()}
                                         >
                                             Projects
                                         </LinkS>                            
                                     </motion.li>
 
 
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
+                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
                                         <LinkS
                                             to="contact"
                                             smooth={true}
@@ -262,7 +259,6 @@ const Navbar = () => {
                                             exact='true'
                                             offset={-80}
                                             activeClassName="active"
-                                            onClick={()=>handleMobile()}
                                         >
                                             Contact
                                         </LinkS>                            

@@ -1,12 +1,17 @@
+import ContactImage from "../../assets/cont.png"
+import {MdOutlineMail} from "react-icons/md"
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 
 
 const Contact = () => {
     return (
         <div id="contact" className="w-[100%] h-[100%] pt-24 pb-12  overflow-hidden">
             <div className="w-[100%] h-[100%] mb-8 4xs:px-2 3xs:px-6 sm:px-24 gap-y-8 flex 4xs:flex-col sm:flex-row justify-between content-center items-center ">
-                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] flex">image</div>
+                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] flex">
+                    <img src={ContactImage} alt="contact" className="object-contain " />
+                </div>
 
-                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] mb-32 flex flex-col  ">
+                <div className="4xs:w-[100%] sm:w-[50%] h-[100%] mb-32 flex flex-col justify-center content-center items-start ">
                     <h1 className="text-4xl pb-12 ">Let's work together</h1>
 
                     <p className="w-[80%] text-base pb-12">
@@ -14,12 +19,20 @@ const Contact = () => {
                         on existing ones.
                     </p>
 
-                    <div className="w-[80%] gap-y-4 flex flex-wrap flex-row justify-evenly content-center items-center">
-                        <button className="px-4 py-2 hover:bg-teal-200 border-2 border-teal-200 ">a</button>
+                    <div className="w-[80%] gap-y-4 text-3xl flex flex-wrap flex-row justify-evenly content-center items-center">
+                        <a href="mailto:asamoahjaeldeborah@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <button className="p-2 text-blue-500 hover:duration-500 ease-in-out hover:scale-150 hover:bg-white-500"><MdOutlineMail /> </button>
+                        </a>
 
-                        <button className="px-4 py-2 hover:bg-teal-200 border-2 border-teal-200 ">b</button>
+                        <a href="https://github.com/Deb-bie" target="_blank" rel="noopener noreferrer">
+                            <button className="p-2 text-blue-500 hover:duration-500 ease-in-out hover:scale-150 hover:bg-white-500">
+                                <AiFillGithub />
+                            </button>
+                        </a>
 
-                        <button className="px-4 py-2 hover:bg-teal-200 border-2 border-teal-200 ">c</button>
+                        <a href="https://www.linkedin.com/in/deborah-asamoah-518668181/" target="_blank" rel="noopener noreferrer">
+                            <button className="p-2 text-blue-500 hover:duration-500 ease-in-out hover:scale-150 hover:bg-white-500"><AiFillLinkedin /> </button>
+                        </a>
                     </div>
 
                 </div>
