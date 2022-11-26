@@ -1,6 +1,8 @@
 import {useState} from "react"
 import {Link as LinkS} from "react-scroll"
 import {motion} from "framer-motion"
+import NavData from "../../data/navData.js"
+
 import "./navbar.css"
 
 
@@ -89,61 +91,24 @@ const Navbar = () => {
                 </div>
 
                 <ul className="sm:w-[60%] lg:w-[40%] font-['Poppins'] 4xs:hidden sm:flex flex-row justify-evenly cursor-pointer ">
-                    <li className="item transform transition duration-500 hover:scale-125 hover:text-red-500">
-                        <LinkS
-                            to="about"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}
-                            activeClassName="active"
-                        >
-                            About
-                        </LinkS>
-                    </li>
-
-                    <li className="item transform transition duration-500 hover:scale-125 hover:text-red-500">
-                        <LinkS
-                            to="skills"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}
-                            activeClassName="active"
-                        >
-                            Skills
-                        </LinkS>
-                    </li>
-
-                    <li className="item transform transition duration-500 hover:scale-125 hover:text-red-500">
-                        <LinkS
-                            to="projects"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-80}
-                            activeClassName="active"
-                        >
-                            Projects
-                        </LinkS>
-                    </li>
-
-                    <li className="item transform transition duration-500 hover:scale-125 hover:text-red-500">
-                        <LinkS
-                            to="contact"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            offset={-20}
-                            activeClassName="active"
-                        >
-                            Contact
-                        </LinkS>
-                    </li>
+                    {
+                        NavData.map((nav, id) => (
+                            <li className="item transform transition duration-500 hover:scale-125 hover:text-red-500">
+                                <LinkS
+                                    key={id}
+                                    to={nav.to}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={nav.offset}
+                                    activeclassname="active"
+                                >
+                                    {nav.value}
+                            </LinkS>
+                        </li>
+                        ))
+                    }
                 </ul>
 
 
@@ -205,64 +170,25 @@ const Navbar = () => {
                             <div className="w-full flex flex-col">
                                 <ul className="py-12 pl-[30px] w-full flex flex-col ">
 
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
-                                        <LinkS
-                                            to="about"
-                                            smooth={true}
-                                            duration={200}
-                                            spy={true}
-                                            exact='true'
-                                            offset={-80}
-                                            activeClassName="active"
-                                        >
-                                            About
-                                        </LinkS>                            
-                                    </motion.li>
-
-
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
-                                        <LinkS
-                                            to="skills"
-                                            smooth={true}
-                                            duration={200}
-                                            spy={true}
-                                            exact='true'
-                                            offset={-80}
-                                            activeClassName="active"
-                                        >
-                                            Skills
-                                        </LinkS>                            
-                                    </motion.li>
-
-
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
-                                        <LinkS
-                                            to="projects"
-                                            smooth={true}
-                                            duration={500}
-                                            spy={true}
-                                            exact='true'
-                                            offset={-80}
-                                            activeClassName="active"
-                                        >
-                                            Projects
-                                        </LinkS>                            
-                                    </motion.li>
-
-
-                                    <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} onClick={()=>handleMobile()} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
-                                        <LinkS
-                                            to="contact"
-                                            smooth={true}
-                                            duration={500}
-                                            spy={true}
-                                            exact='true'
-                                            offset={-80}
-                                            activeClassName="active"
-                                        >
-                                            Contact
-                                        </LinkS>                            
-                                    </motion.li>
+                                    {
+                                        NavData.map((nav, id)=> (
+                                            <LinkS 
+                                                key={id}
+                                                to={nav.to}
+                                                smooth={true}
+                                                duration={nav.duration}
+                                                spy={true}
+                                                exact='true'
+                                                offset={nav.offset}
+                                                activeclassname="active"
+                                                onClick={()=>handleMobile()}
+                                            >
+                                                <motion.li initial={false} animate={mobile ? "show" : "hide"} variants={itemsVariants} className="text-2xl h-[42px] flex items-center cursor-pointer mt-8 " >
+                                                    {nav.value}
+                                                </motion.li>
+                                            </LinkS>
+                                        ))
+                                    }
                                 </ul>
                             </div>
                         </div>
