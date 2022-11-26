@@ -1,11 +1,8 @@
 import Shortly from "../assets/shortly.png"
 import Zubi from "../assets/zubi.png"
-import Pine from "../assets/pine.png"
+// import Pine from "../assets/pine.png"
 import Contacts from "../assets/contacts.png"
-// import Shortly from "../assets/shortly.png"
-// import Shortly from "../assets/shortly.png"
-// import Shortly from "../assets/shortly.png"
-// import Shortly from "../assets/shortly.png"
+
 
 
 const ProjectsData = [
@@ -72,21 +69,21 @@ const ProjectsData = [
             }
         ]
     },
-    {
-        image: Pine,
-        github: "https://github.com/Deb-bie/pine",
-        live: "https://pine.onrender.com",
-        title: "Pine",
-        desc: "Pine is a frontend web app landing page for a fintech SAAS  ",
-        stack: [
-            {
-                one: "ReactJS"
-            },
-            {
-                one: "TailwindCss"
-            }
-        ]
-    },
+    // {
+    //     image: Pine,
+    //     github: "https://github.com/Deb-bie/pine",
+    //     live: "https://pine.onrender.com",
+    //     title: "Pine",
+    //     desc: "Pine is a frontend web app landing page for a fintech SAAS  ",
+    //     stack: [
+    //         {
+    //             one: "ReactJS"
+    //         },
+    //         {
+    //             one: "TailwindCss"
+    //         }
+    //     ]
+    // },
     {
         image: Contacts,
         github: "https://github.com/Deb-bie/contacts",
