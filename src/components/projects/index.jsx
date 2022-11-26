@@ -13,12 +13,12 @@ const Projects = () => {
             <div className="w-[100%] h-[100%] 4xs:px-2 3xs:px-6 sm:px-24 gap-y-4 flex flex-col justify-center content-center items-center ">
                 <h1 className="w-[100%] text-3xl mb-6 flex flex-row justify-start items-start content-center  ">Projects</h1>
 
-                <div className="4xs:w-[100%] sm:w-[100%] grid gap-8 4xs:grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 ">
+                <div className="4xs:w-[100%] sm:w-[100%] grid gap-8 4xs:grid-cols-1 lg:grid-cols-2 ">
                     {
                         ProjectsData.map((project, id) => (
                             <div key={id} className="glass w-[100%] h-[100%] p-8 flex flex-col justify-center items-center content-center ">
                                 <div className="card w-[100%] h-[100%] ">
-                                    <img src={project.image} alt="shortly" className="object-contain" />
+                                    <img src={project.image} alt="project" className="object-contain" />
         
                                     <div className="info">
                                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
@@ -36,7 +36,7 @@ const Projects = () => {
                                     <p>
                                         {
                                             project.stack.map((item, id) => (
-                                                <span>✨ {item.one} &nbsp; </span>
+                                                <span key={id}>✨ {item.one} &nbsp; </span>
                                             ))
                                         }
                                     </p>
