@@ -30,7 +30,7 @@ const Contact = () => {
                             </button>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/deborah-asamoah-518668181/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/deborah-asamoah" target="_blank" rel="noopener noreferrer">
                             <button className="p-2 text-blue-500 hover:duration-500 ease-in-out hover:scale-150 hover:bg-white-500"><AiFillLinkedin /> </button>
                         </a>
                     </div>

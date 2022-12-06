@@ -2,13 +2,15 @@ import Shortly from "../assets/shortly.png"
 import Zubi from "../assets/zubi.png"
 // import Pine from "../assets/pine.png"
 import Contacts from "../assets/contacts.png"
+import Homeo from "../assets/homeo.png"
 
 
 
 const ProjectsData = [
     {
-        image: Zubi,
-        github: "https://github.com/Deb-bie/homeo",
+        image: Homeo,
+        // github: "https://github.com/Deb-bie/homeo",
+        // github: "#",
         live: "https://homeo.onrender.com",
         title: "Homeo",
         desc: "Homeo is a fullstack web app for an ecommerce store. It has some functionalities such as creating an account, adding products to your cart and wishlist and so many more.",

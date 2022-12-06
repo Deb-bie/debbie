@@ -21,12 +21,26 @@ const Projects = () => {
                                     <img src={project.image} alt="project" className="object-contain" />
         
                                     <div className="info">
-                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
-                                            <button><AiFillGithub /> </button>
-                                        </a>
-                                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
-                                            <button><IoEyeSharp /> </button>
-                                        </a>
+                                        
+                                        {
+                                            project.github ? 
+                                                <>
+                                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
+                                                        <button><AiFillGithub /> </button>
+                                                    </a>
+
+                                                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
+                                                        <button><IoEyeSharp /> </button>
+                                                    </a>
+                                                </>
+                                            : 
+                                            
+                                                <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:duration-500  hover:scale-90 " >
+                                                    <button><IoEyeSharp /> </button>
+                                                </a> 
+                                        }
+
+
                                     </div>
                                 </div>
         
