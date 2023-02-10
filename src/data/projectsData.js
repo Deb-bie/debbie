@@ -3,6 +3,7 @@ import Zubi from "../assets/zubi.png"
 // import Pine from "../assets/pine.png"
 import Contacts from "../assets/contacts.png"
 import Homeo from "../assets/homeo.png"
+import omyHome from "../assets/omyhome.png"
 
 
 
@@ -23,6 +24,28 @@ const ProjectsData = [
             },
             {
                 one: "Material Ui"
+            },
+            {
+                one: "NodeJS/Express"
+            },
+            {
+                one: "MongoDb"
+            }
+        ]
+    },
+
+    {
+        image: omyHome,
+        github: "https://github.com/Deb-bie/omyhome.git",
+        live: "https://omyhome.onrender.com/",
+        title: "omyHome",
+        desc: "omyHome is a great solution for those looking to find a home. It simplifies the process of searching for a new home by providing an easy-to-use platform that allows users to quickly search for properties in their desired area. ",
+        stack: [
+            {
+                one: "ReactJs"
+            },
+            {
+                one: "TailwindCss"
             },
             {
                 one: "NodeJS/Express"
