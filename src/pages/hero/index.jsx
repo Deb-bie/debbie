@@ -10,9 +10,8 @@ const Hero = () => {
                 <p className="mb-4 text-4xl 4xs:text-center ">Hi, I'm Deborah 👋🏽</p>
                 <p className="text-xl my-4 leading-[40px] ">A fullstack developer with experience in building web and mobile applications using modern technologies. </p>
                 <p className="text-base leading-[30px] ">
-                    I have a computer engineering background with  proficiency in Python and JavaScript 
-                    (ReactJs). I have worked with Agile Project Management and I'm interested in Java 🙃 
-                    and volunteering in tech communities 😍.
+                    I have a computer engineering background with  proficiency in Java, JavaScript and Python. 
+                    I have worked with Agile Project Management and I'm interested in volunteering in tech communities 😍.
                 </p>
             </div>
 

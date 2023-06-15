@@ -5,6 +5,7 @@ import Html from "../assets/html.png"
 import Css from "../assets/css.png"
 import Sass from "../assets/sass.png"
 import React from "../assets/react.png"
+import Angular from "../assets/angular.svg"
 import TypeScript from "../assets/ts.png"
 import Express from "../assets/express.png"
 import Graphql from "../assets/graphql.png"
@@ -16,13 +17,11 @@ import Docker from "../assets/docker.png"
 import Figma from "../assets/figma.png"
 import Jest from "../assets/jest.png"
 import Mongo from "../assets/mongo.png"
+import Postgresql from "../assets/postgresql.svg"
+
 
 
 const SkillsData = [
-    {
-        image: Python,
-        text: "Python"
-    },
     {
         image: JavaScript,
         text: "JavaScript"
@@ -30,6 +29,10 @@ const SkillsData = [
     {
         image: Java,
         text: "Java"
+    },
+    {
+        image: Python,
+        text: "Python"
     },
     {
         image: Html,
@@ -46,6 +49,10 @@ const SkillsData = [
     {
         image: React,
         text: "React"
+    },
+    {
+        image: Angular,
+        text: "Angular"
     },
     {
         image: TypeScript,
@@ -91,6 +98,10 @@ const SkillsData = [
         image: Mongo,
         text: "MongoDb"
     },
+    {
+        image: Postgresql,
+        text: "Postgresql"
+    }
 ]
 
 

@@ -7,7 +7,7 @@ import Contact from "../../components/contact"
 
 const Home = () => {
   return (
-    <div className="bg-[#dcedc82e] ">
+    <div className="bg-[#dcedc82e] xl:px-[5vw] 2xl:px-[10vw] ">
         <Navbar />
         <Hero />
         <Skills />
